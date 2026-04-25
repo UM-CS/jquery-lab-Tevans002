@@ -69,6 +69,7 @@
 			// Closer.
 				$closer
 					.on('click', function(event) {
+						alert("Are you sure?");
 						$this.trigger('---hide');
 					});
 
@@ -143,7 +144,7 @@
 			$window
 				.on('keyup', function(event) {
 
-					if (event.keyCode == 32
+					if (event.keyCode == 27
 					&&	$body.hasClass('content-active')) {
 
 						event.preventDefault();
